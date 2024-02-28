@@ -1,8 +1,8 @@
 package es.edu.uah.matcomp.ej2;
 
 public class MyLine {
-    private MyPoint begin;
-    private MyPoint end;
+    private MyPoint begin= new MyPoint();
+    private MyPoint end= new MyPoint();
     public MyLine(int x1, int y1, int x2, int y2){
         begin.setX(x1);
         begin.setY(y1);
@@ -61,13 +61,31 @@ public class MyLine {
     public double getLength(){
         return begin.distance(end);
     }
-    /*
-    public double getGradients(){
+
+    public int[] getBeginXY(){
+        int[] XY= new int[2];
+        XY[0]=this.getBeginX();
+        XY[1]=this.getBeginY();
+        return XY;
 
 
     }
+    public void setBeginXY(int newX, int newY){
+        setBeginX(newX);
+        setBeginY(newY);
+    }
+    public int[] getEndXY(){
+        int[] XY= new int[2];
+        XY[0]=this.getBeginX();
+        XY[1]=this.getBeginY();
+        return XY;
 
-     */
+
+    }
+    public void setEndXY(int newX, int newY){
+        setBeginX(newX);
+        setBeginY(newY);
+    }
 
     @Override
     public String toString() {
@@ -75,5 +93,12 @@ public class MyLine {
                 "begin=" + begin +
                 ", end=" + end +
                 '}';
+    }
+    public double getGradients(){
+        double difX;
+        double difY;
+        difX=getBeginX()-getENdX();
+        difY=getBeginY()-getEndY();
+        return Math.atan2(difX,difX);
     }
 }

@@ -64,6 +64,7 @@ public class MyPoint {
 
         return (dist);
     }
+
     public double distance(MyPoint another){
         double distx;
         double disty;
@@ -77,6 +78,16 @@ public class MyPoint {
         double dist = Math.sqrt(Math.pow(distx,2) + Math.pow(disty,2));
         return dist;
 
+    }
+    public int[] getXY(){
+        int[] XY= new int[2];
+        XY[0]=this.x;
+        XY[1]=this.y;
+        return XY;
+    }
+    public void setXY(int newX, int newY){
+        x=newX;
+        y=newY;
     }
     public double distance(){
         double dist= Math.sqrt(x^2+y^2);

@@ -82,13 +82,13 @@ public class TestMain{
         // Test setters
         System.out.println("x is: " + p1.getX());  // Test getters
         System.out.println("y is: " + p1.getY());
-        /*
+
         p1.setXY(3, 0);
 // Test setXY()
         System.out.println(p1.getXY()[0]);  // Test getXY()
         System.out.println(p1.getXY()[1]);
 
-         */
+
         System.out.println(p1);
         MyPoint p2 = new MyPoint(0, 4);  // Test another constructor
         System.out.println(p2);
@@ -100,6 +100,57 @@ public class TestMain{
         System.out.println(p1.distance(5, 6));  // which version?
         System.out.println(p1.distance());
 // which version?
+
+// Test toString()
+
+        MyLine l1= new MyLine(8,6,4,5);
+        // Test setters
+        System.out.println("begin is: " + l1.getBeginXY());  // Test getters
+        System.out.println("end is: " + l1.getEndXY());
+        l1.setBeginXY(3, 0);
+        l1.setEndXY(4,5);
+// Test setXY()
+        System.out.println(l1.getBeginXY()[0]);
+        System.out.println(l1.getEndXY()[0]);// Test getXY()
+        System.out.println(l1.getBeginXY()[1]);
+        System.out.println(l1.getEndXY()[1]);
+        System.out.println(l1);
+        MyLine l2 = new MyLine(0,4,8,6);  // Test another constructor
+        System.out.println(l2);
+        // Testing the overloaded methods distance()
+        System.out.println(l1.getLength());
+        System.out.println(l1.getGradients());
+
+// which version?
+
+// Test toString()
+        MyCircle c1= new MyCircle(1,1,0);
+        c1.setCenterX(8);
+        c1.setCenterY(6);
+        // Test setters
+        System.out.println("x is: " + p1.getX());  // Test getters
+        System.out.println("y is: " + p1.getY());
+
+        p1.setXY(3, 0);
+// Test setXY()
+        System.out.println(p1.getXY()[0]);  // Test getXY()
+        System.out.println(p1.getXY()[1]);
+
+
+        System.out.println(p1);
+        MyPoint p2 = new MyPoint(0, 4);  // Test another constructor
+        System.out.println(p2);
+        // Testing the overloaded methods distance()
+        System.out.println(p1.distance(p2));
+// which version?
+        System.out.println(p2.distance(p1));
+// which version?
+        System.out.println(p1.distance(5, 6));  // which version?
+        System.out.println(p1.distance());
+
+
+
+
 
 }}
 

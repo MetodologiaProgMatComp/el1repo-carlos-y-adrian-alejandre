@@ -38,7 +38,7 @@ public class MyCircle {
                 '}';
     }
 
-    public int getCentery(){
+    public int getCenterY(){
         return center.getY();
     }
     public void setCenterX(int x){
@@ -60,10 +60,21 @@ public class MyCircle {
 
 
     }
+    public int[] getCenterXY(){
+        int[] XY= new int[2];
+        XY[0]=this.getCenterX();
+        XY[1]=this.getCenterY();
+        return XY;
+    }
+    public void setCenterXY(int newX, int newY){
+        setCenterY(newY);
+        setCenterX(newX);
+    }
     public double getCircumference(){
         double circumference=2*Math.PI*radius;
         return circumference;
     }
+
     public double distance(MyCircle another){
         return (center.distance(another.getCenter()));
     }
