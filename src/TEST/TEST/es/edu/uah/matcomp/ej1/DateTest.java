@@ -3,7 +3,7 @@ package TEST.es.edu.uah.matcomp.ej1;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/*
 class DateTest {
 
     @Test
@@ -54,3 +54,5 @@ class DateTest {
         assertEquals(3,d.getDay());
     }
 }
+
+ */

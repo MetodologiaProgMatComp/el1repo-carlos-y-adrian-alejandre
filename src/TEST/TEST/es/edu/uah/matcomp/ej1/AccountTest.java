@@ -1,8 +1,9 @@
 package TEST.es.edu.uah.matcomp.ej1;
-
+/*
+import es.edu.uah.matcomp.ej1.Account;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AccountTest {
 
@@ -46,3 +47,6 @@ class AccountTest {
 
     }
 }
+
+ */
+

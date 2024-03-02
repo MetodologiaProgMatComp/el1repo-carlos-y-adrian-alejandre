@@ -93,6 +93,25 @@ public class MyPoint {
         double dist= Math.sqrt(x^2+y^2);
         return dist;
     }
+    public double MatrizDistancia() {
+        MyPoint[] Lista = new MyPoint[11];
+        for (int i = 0; i <= 10; i += 1) {
+
+            MyPoint p = new MyPoint(i, i);
+            Lista[i] = p;
 
 
-}
+        }
+        for (int i = 0; i <= 10; i += 1)
+            for (int j = 0; j <= 10; j += 1) {
+                return (Lista[i].distance(Lista[j]));
+            }
+        return(0);
+    }
+    }
+
+
+
+
+
+

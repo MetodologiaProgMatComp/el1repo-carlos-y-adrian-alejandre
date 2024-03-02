@@ -35,9 +35,7 @@ public class Book {
     public int getQty(){
         return qty;
     }
-    public Author getAuthors(){
-        return author;
-    }
+
     public void setPrice(double newPrice){
         price=newPrice;
 

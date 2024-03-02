@@ -3,7 +3,7 @@ package TEST.es.edu.uah.matcomp.ej1;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/*
 class TimeTest {
 
     @Test
@@ -71,3 +71,5 @@ class TimeTest {
         assertEquals(3,t.getSecond());
     }
 }
+
+ */

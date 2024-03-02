@@ -1,7 +1,7 @@
 package es.edu.uah.matcomp.ej2;
 
 public class MyCircle {
-    private MyPoint center;
+    private MyPoint center= new MyPoint();
     private int radius;
     public MyCircle(int x, int y, int r){
         center.setX(x);

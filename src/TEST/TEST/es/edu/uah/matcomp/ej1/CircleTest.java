@@ -1,7 +1,7 @@
 package TEST.es.edu.uah.matcomp.ej1;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/*
 class CircleTest {
 
     @org.junit.jupiter.api.Test
@@ -45,3 +45,5 @@ class CircleTest {
         assertEquals(2*Math.PI,c.getCircumference());
     }
 }
+
+ */

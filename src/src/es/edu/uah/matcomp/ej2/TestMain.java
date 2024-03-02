@@ -94,12 +94,16 @@ public class TestMain{
         System.out.println(p2);
         // Testing the overloaded methods distance()
         System.out.println(p1.distance(p2));
-// which version?
+// which version? version: distance(MyPoint another)
         System.out.println(p2.distance(p1));
-// which version?
-        System.out.println(p1.distance(5, 6));  // which version?
+// which version? misma version que la anterior
+        System.out.println(p1.distance(5, 6));  // which version? verison: distance(int distx, int disty)
         System.out.println(p1.distance());
-// which version?
+// which version? version : public double distance(){
+//        double dist= Math.sqrt(x^2+y^2)
+        System.out.println(p2.MatrizDistancia());
+
+
 
 // Test toString()
 
@@ -125,28 +129,37 @@ public class TestMain{
 
 // Test toString()
         MyCircle c1= new MyCircle(1,1,0);
+        System.out.println(c1);
         c1.setCenterX(8);
         c1.setCenterY(6);
+        c1.setRadius(3);
         // Test setters
-        System.out.println("x is: " + p1.getX());  // Test getters
-        System.out.println("y is: " + p1.getY());
+        System.out.println("x is: " + c1.getCenterX());  // Test getters
+        System.out.println("y is: " + c1.getCenterY());
+        System.out.println("radius is: "+ c1.getRadius());
 
-        p1.setXY(3, 0);
+        c1.setCenterXY(3, 0);
 // Test setXY()
-        System.out.println(p1.getXY()[0]);  // Test getXY()
-        System.out.println(p1.getXY()[1]);
+        System.out.println(c1.getCenterXY()[0]);  // Test getXY()
+        System.out.println(c1.getCenterXY()[1]);
 
 
-        System.out.println(p1);
-        MyPoint p2 = new MyPoint(0, 4);  // Test another constructor
-        System.out.println(p2);
+
+        MyCircle c2 = new MyCircle(0,1, 4);  // Test another constructor
+
         // Testing the overloaded methods distance()
-        System.out.println(p1.distance(p2));
+        System.out.println(c2.getCircumference());
 // which version?
-        System.out.println(p2.distance(p1));
-// which version?
-        System.out.println(p1.distance(5, 6));  // which version?
-        System.out.println(p1.distance());
+        System.out.println(c2.distance(c1));
+
+
+        MyTriangle t1 = new MyTriangle(1,1,2,2,3,3);  // Test constructor
+
+// Test toString()
+        System.out.println(t1);
+        System.out.println(t1.getPerimeter());
+        System.out.println(t1.getType());
+
 
 
 
