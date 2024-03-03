@@ -4,9 +4,17 @@ public class Line {
 
     // A line composes of two points (as instance variables)
     private Point begin;    // beginning point
-    private Point end;      // ending point
+    private Point end;
+
+    // ending point
 
     // Constructors
+    public Line(){
+        begin.setX(0);
+        begin.setY(0);
+        end.setX(0);
+        end.setY(0);
+    }
     public Line(Point begin, Point end) {  // caller to construct the Points
         this.begin = begin;
         this.end = end;
@@ -83,8 +91,8 @@ public class Line {
     }
 
     public void setEndXY(int x, int y) {
-        begin.setX(x);
-        begin.setY(y);
+        end.setX(x);
+        end.setY(y);
     }
 
     public double getLength() {

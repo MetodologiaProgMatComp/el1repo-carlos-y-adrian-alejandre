@@ -1,5 +1,7 @@
-package es.edu.uah.matcomp.ej2;
+package TEST.es.edu.uah.matcomp.ej2;
 
+import es.edu.uah.matcomp.ej2.MyLine;
+import es.edu.uah.matcomp.ej2.MyPoint;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -27,7 +29,7 @@ class MyLineTest {
     @Test
     void getEnd() {
         MyLine l1= new MyLine(1,1,2,2);
-        MyPoint p1= new MyPoint(2,2)
+        MyPoint p1= new MyPoint(2,2);
         assertEquals(p1,l1.getEnd());
     }
 

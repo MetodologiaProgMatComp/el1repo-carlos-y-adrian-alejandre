@@ -1,5 +1,7 @@
 package es.edu.uah.matcomp.ej4;
 
+import javax.swing.event.MenuDragMouseEvent;
+/*
 public class LineSub extends Point {
     private Point end;
     // Ending point
@@ -46,17 +48,32 @@ public class LineSub extends Point {
         return
     }
     public int getBeginY() { ... }
-    public int getEndX() { ... }
-    public int getEndY() { ... }
+    public int getEndX() { return end.getX(); }
+    public int getEndY() { return end.getY(); }
 
-    public void setBeginX(...) { ... }
-    public void setBeginY(...) { ... }
+    public void setBeginX(int x) { Point.setX(x); }
+    public void setBeginY(int y) {Point.setY(y); }
     public void setBeginXY(...) { ... }
-    public void setEndX(...) { ... }
-    public void setEndY(...) { ... }
-    public void setEndXY(...) { ... }
+    public void setEndX(int x) {end.setX(x); }
+    public void setEndY(int y) {end.setY(y);}
+    public void setEndXY(int x, int y) {end.setX(x);
+    end.setY(y);}
 
-    public int getLength() { ... }       // Length of the line
-    public double getGradient() { ... }
+     public double getLength() {
+        // Length of the line
+        int xDiff;
+        int yDiff;
+        xDiff=begin.getX()-end.getX();
+        yDiff=begin.getX()-end.getY();
+        return( Math.sqrt(xDiff*xDiff +yDiff*yDiff));
+    } }       // Length of the line
+    public double getGradient() {
+        int xDiff;
+        int yDiff;
+        xDiff=begin.getX()- end.getX();
+        yDiff=begin.getX()-end.getY();
+        return Math.atan2(yDiff, xDiff);
+    }
 
 }
+*/
