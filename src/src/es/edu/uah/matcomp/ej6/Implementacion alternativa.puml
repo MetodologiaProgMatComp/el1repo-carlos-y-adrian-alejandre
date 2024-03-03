@@ -1,0 +1,24 @@
+@startuml
+abstract class Animal {
+    +abstract public void greeting()
+}
+
+class Cat {
+    +greeting(): void
+}
+
+class Dog {
+    +greeting(): void
+    +greeting(another: Dog): void
+}
+
+class BigDog {
+    +greeting(): void
+    +greeting(another: Dog): void
+}
+
+Animal <|-- Cat
+Animal <|-- Dog
+Dog <|-- BigDog
+
+@enduml

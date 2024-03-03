@@ -1,6 +1,7 @@
-package es.edu.uah.matcomp.ej4;
+package TEST.es.edu.uah.matcomp.ej6;
 
 import es.edu.uah.matcomp.ej3.Student;
+import es.edu.uah.matcomp.ej4.Point;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
