@@ -1,0 +1,95 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+class RECT{
+-px
+-py
+-dx
+-dy
++onClick(x,y)
++onMove(x,y)
++Keypress(key)
++Draw_border(x,y,dx,dy)
++Draw_pick(x,y,dx,dy,pick)
++Draw_text(x,y,text)
++Draw_fill(x,y,dx,dy,colours)
++voice
+}
+class Door{
+-titulo:String
+-Botones:Object
+-Buscador:String
++onClick(x,y)
+}
+class Buscador.Door1{
+-Busqueda reciente:String
+-microfono
+-foto
++eliminar
++hablar
++adjuntar foto
++onClick(x,y)
++onMove(x,y)
++Keypress(key)
++Draw_text(x,y,text)
++voice
+}
+class Botones.Door2{
+-Simbolo
+-acceso
++onClick(x,y)
++onMove(x,y)
++minimizar
++maximizar
++cerrar
+}
+class Red {
+}
+
+class Usuario {
+}
+class Raton {
+}
+class Teclado {
+}
+class Microfono {
+}
+class Secondary.Door1{
++Tiempo
+}
+class Secondary.Door2{
+- Dia , Hora
+}
+class Secondary.Door3{
+-Bateria
+}
+RECT<|--- Door
+Usuario<--- Microfono
+Usuario<||---Teclado
+Usuario<||--- Raton
+Microfono<--- RECT
+Raton<||--- RECT
+Teclado<||---RECT
+
+Door<|---Botones.Door2
+Door<|---Buscador.Door1
+Door<|---Secondary.Door1
+Door<|---Secondary.Door2
+Door<|--- Secondary.Door3
+Red<|--- Door
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml
